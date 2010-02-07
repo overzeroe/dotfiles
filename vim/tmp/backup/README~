@@ -1,0 +1,12 @@
+Configurations of stuff!
+
+Note that files should have dots in front of them. And be in the home directory.  That is, if you want it to work.
+Personally, I just have them all ln -s'd.
+
+Emacs:
+    - emacs: .emacs
+    - emacs.d/: .emacs.d/
+
+Vim:
+    - vimrc: .vimrc
+    - vim/: .vim/

@@ -1,0 +1,11 @@
+#include "Vyquen.h"
+
+int main(){
+    FILE* file = fopen("test.vy");
+    TokenList* tokens = LexFile(file);
+    PrintTokens(tokens);
+    /*
+    SyntaxTree* tree = ParseTokenList(tokens);
+    PrintSyntaxTree(stdout);
+    */
+}

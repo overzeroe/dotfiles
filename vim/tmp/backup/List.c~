@@ -1,0 +1,8 @@
+#include "Vyquen.h"
+
+/* Empty list */
+VyCons* Nil(){
+    VyCons* cons = VyMalloc(sizeof(VyCons));
+    cons->car = NONE;
+    cons->cdr = NONE;
+}

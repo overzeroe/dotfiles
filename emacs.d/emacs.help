@@ -1,0 +1,86 @@
+
+A List of Emacs Commands and Function
+
+* Movement:
+C-f (forward-char)
+C-b (backward-char)
+C-n (next line)
+C-p (previous line)
+
+C-a (start of line)
+C-e (end of line)
+
+M-< (start of file)
+M-> (end of file)
+
+M-g M-g (go to line)
+
+
+* Editing:
+
+C-o (add new line)
+
+C-S-_ (undo)
+
+C-w (kill marked text)
+M-w (put marked text in kill ring, but do not kill)
+C-y (yank text in kill-ring)
+
+M-/ (dynamic completion)
+
+* Buffers:
+
+C-x b (switch buffer)
+C-x k (kill buffer)
+
+* Windows:
+
+C-x 2 (split window horizontally)
+C-x 3 (split window vertically)
+C-x 0 (exit current window)
+C-x 1 (exit all but current window)
+C-x o (switch window)
+
+shrink-window (shrinks window by 1 line)
+enlarge-window (grows window by 1 line)
+
+* Other:
+
+C-g (quit current command)
+M-x (execute command)
+M-: (eval lisp sexp)
+M-! (eval shell command)
+
+* Files:
+
+C-x C-s (save)
+C-x C-c (exit)
+C-x C-f (open file)
+
+* Search/Replace: 
+C-r (isearch backwards)
+C-s (isearch forwards)
+
+
+* Modes:
+
+** Outline Mode:
+   
+C-c C-t (show only headings)
+C-c C-a (show all) 
+C-c C-s (show tree under cursor)
+C-c C-d (hide tree under cursor)    
+
+** JDEE:
+
+C-c C-v C-. OR
+C-c C-v ..  (JDE in-line completion)
+
+C-c C-v C-c (compile app)
+C-c C-v C-r (run app)
+C-c C-v C-z (import class)
+C-c C-v z   (import all necessary classes)
+
+***Variables:
+jde-electric-return-p (enables electric return, which is autocompletion of braces)
+jde-get-k&r (sets brace and indent style for code)

@@ -1,0 +1,5 @@
+This is my .emacs.d directory. To load the code contained within, 
+put the following into your .emacs file in your home directory:	  
+
+    ;;; Load the emacs.el configuration file in the emacs.d directory
+    (load ".emacs.d/emacs.el")

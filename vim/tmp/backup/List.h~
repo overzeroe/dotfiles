@@ -1,0 +1,12 @@
+#ifndef LIST
+#define LIST
+
+typedef struct _VyCons {
+    VyObj car;
+    VyObj cdr;
+} VyCons;
+
+VyCons* Nil();
+VyCons* Cons(VyObj, VyObj);
+
+#endif /* LIST */

@@ -1,0 +1,24 @@
+
+# The compiler used and the command line arguments to it
+COMPILER	= gcc
+ARGS		= -Wall -I include/ -g 
+EXECUTABLE	= vyquen
+CMDLINK		= ${COMPILER} -lm -o ${EXECUTABLE} ${ARGS}		# Link the .o files into an executable
+CMD		= ${COMPILER} -c ${ARGS}				# Don't link, just compile to .o
+
+ALLFILES 	= parser/Lexer.o mem/Mem.o Vyquen.o
+
+# Top level rule, compile whole program
+all: ${EXECUTABLE}
+
+# Invoke the compiler with linking enabled 
+${EXECUTABLE}: ${ALLFILES}
+	${CMDLINK} ${ALLFILES}
+
+# Compile all C files into object code
+%.o: %.c
+	${CMD} $<
+
+# Clean out the project and delete all .o files
+clean:
+	rm -rf *.o 

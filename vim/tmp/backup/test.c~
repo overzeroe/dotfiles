@@ -1,0 +1,10 @@
+#include "ngspice.h"
+#include "stdio.h"
+
+int main(){
+    /* Open the file with the test data */
+    char* test_file = "test.net";
+    FILE* file = fopen(test_file, "r");
+
+    inp_spsource(file, 1, test_file);
+}

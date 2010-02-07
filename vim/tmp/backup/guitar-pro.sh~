@@ -1,0 +1,7 @@
+#!/bin/bash
+
+timidity -iA -Os &
+cd $HOME/.wine/drive_c/Program\ Files/Guitar\ Pro\ 5
+wine GP5.exe
+sleep 5
+killall timidity
